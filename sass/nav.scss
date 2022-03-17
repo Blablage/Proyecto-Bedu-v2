@@ -1,0 +1,25 @@
+@use "variables" as *;
+
+body {
+    font-family: $title-text;
+}
+  
+.navbar {
+    background-color: $bg-title-color;
+}
+  
+.navbar-brand span {
+    color: $title-text-color;
+    font-family: $search-text;
+}
+
+.d-flex{
+    & > button {
+        background-color: $title-text-color;
+    }
+}
+  
+.navbar-brand > img{
+    height: 50px;
+    width: 50px;
+}
