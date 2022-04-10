@@ -46,6 +46,7 @@ function getOnlyDate(timestamp){
 }
 
 // //Genera la tabla filtrada de los alumnos y su informacion desde la base de datos de firebase
+// ARREGLAR Barra de Busquedas
 function buildFilteredTable(data) {
 
   //Variable que guarda la tabla de las busquedas
