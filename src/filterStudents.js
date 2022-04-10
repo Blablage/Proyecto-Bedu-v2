@@ -28,6 +28,9 @@ searchButton.addEventListener("click", results);
 
 function results() {
 
+  let table = document.getElementById('databaseTable');
+  table.innerHTML = '';
+
   const studentsFiltered = studentsArray.filter(elem => {
     return (
       elem[`${optionValue.value}`] === searchValue.value
@@ -62,7 +65,7 @@ function buildFilteredTable(data) {
       <td>${getOnlyDate(elem.startDate)}</td>
       <td>${getOnlyDate(elem.endDate)}</td>
       <td class="d-flex">
-        <a class="ps-2 mx-4" href="#"><img src="images/plus.png"/></a>
+        <a class="mx-4" href="#"><img src="images/plus.png"/></a>
       </td>
     </tr>
     `
