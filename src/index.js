@@ -1,5 +1,7 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js"
-import { getFirestore, collection, getDocs, query } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-firestore.js"
+import { initializeApp } from 'firebase/app';
+import { getFirestore, collection, getDocs, query } from 'firebase/firestore';
+import './css/index.css'
+
 
 const firebaseApp = initializeApp({
   apiKey: "AIzaSyAbB5YTMV3gkN-VvegI39ogGyeJBo0Ng5I",
