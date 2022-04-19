@@ -2,7 +2,7 @@ import { queryData } from "./startDatabase"
 import { buildFilteredTable } from "./searchResults"
 import './css/index.css'
 
-//Variable que catura los estudiantes y sus datos de la base de datos
+//Variable que captura los estudiantes y sus datos de la base de datos
 let studentsArray = [];
 queryData.forEach((student) =>  studentsArray.push(student.data()));
 
