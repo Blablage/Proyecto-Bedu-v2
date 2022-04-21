@@ -26,3 +26,7 @@ const results = () => {
 
 //Compara y filtra los datos ingresados segun el parámetro de busqueda elegido
 searchButton.addEventListener("click", results);
+searchMain.addEventListener("submit", (e) => {
+  e.preventDefault();
+  results();
+});
