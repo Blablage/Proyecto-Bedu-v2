@@ -38,6 +38,7 @@
     "webpack-dev-server": "^4.8.1"
   },
   "dependencies": {
+    "dotenv": "^16.0.0",
     "firebase": "^9.6.10"
   }
 }

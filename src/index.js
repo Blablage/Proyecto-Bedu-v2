@@ -17,8 +17,15 @@ const results = () => {
   table.innerHTML = '';
 
   const studentsFiltered = studentsArray.filter(elem => {
+
+    //Se crea una expresion regular en base a Searchbox
+    let searchboxER = new RegExp (searchValue.value, 'i')
+
     return (
-      elem[`${optionValue.value}`] === searchValue.value
+      //elem[`${optionValue.value}`] === searchValue.value
+      //Por cada elemento de la base de datos, busca el dato segun la opcion de busqueda elegida
+      //Si coincide con la expresion regular los agrega a la tabla filtrada
+      searchboxER.test(elem[`${optionValue.value}`]) === true
     )
   })
   buildFilteredTable(studentsFiltered);
